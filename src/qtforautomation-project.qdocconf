@@ -1,0 +1,36 @@
+project                       = QtForAutomation
+description                   = Qt for Automation Documentation
+version                       = $QT_VERSION
+url                           = https://doc.qt.io/QtForAutomation
+
+sourcedirs                   += .
+
+qhp.projects                  = QtForAutomation
+
+qhp.QtForAutomation.file                = qtforautomation.qhp
+qhp.QtForAutomation.namespace           = org.qt-project.qtforautomation.$QT_VERSION_TAG
+qhp.QtForAutomation.virtualFolder       = qtforautomation
+qhp.QtForAutomation.indexTitle          = Qt for Automation
+qhp.QtForAutomation.indexRoot           =
+
+qhp.QtForAutomation.filterAttributes    = qtforautomation $QT_VERSION qtrefdoc
+qhp.QtForAutomation.customFilters.Qt.name = QtAutomation $QT_VERSION
+qhp.QtForAutomation.customFilters.Qt.filterAttributes = qtforautomation $QT_VERSION
+
+qhp.QtForAutomation.subprojects                   = manual
+qhp.QtForAutomation.subprojects.manual.title      = Qt for Automation
+qhp.QtForAutomation.subprojects.manual.indexTitle = Qt for Automation TOC
+qhp.QtForAutomation.subprojects.manual.selectors  = manual
+
+tagfile                       = qtforautomation.tags
+
+# check dependencies, linking using external URLs for now
+depends += qtmqtt qtknx
+
+# dependencies to Qt docs
+depends += qtdoc qtquickcontrols2 qtwebengine qtvirtualkeyboard qtquick qtserialbus
+
+buildversion = "Qt for Automation $QT_VER"
+
+macro.QTA = "Qt for Automation"
+navigation.homepage = "Qt for Automation"

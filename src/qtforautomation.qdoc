@@ -1,0 +1,202 @@
+/****************************************************************************
+**
+** Copyright (C) 2018 The Qt Company Ltd.
+** Contact: https://www.qt.io/licensing/
+**
+** This file is part of the documentation of Qt for Automation.
+**
+** $QT_BEGIN_LICENSE:GPL$
+** Commercial License Usage
+** Licensees holding valid commercial Qt licenses may use this file in
+** accordance with the commercial license agreement provided with the
+** Software or, alternatively, in accordance with the terms contained in
+** a written agreement between you and The Qt Company. For licensing terms
+** and conditions see https://www.qt.io/terms-conditions. For further
+** information use the contact form at https://www.qt.io/contact-us.
+**
+** GNU General Public License Usage
+** Alternatively, this file may be used under the terms of the GNU
+** General Public License version 3 or (at your option) any later version
+** approved by the KDE Free Qt Foundation. The licenses are as published by
+** the Free Software Foundation and appearing in the file LICENSE.GPL3
+** included in the packaging of this file. Please review the following
+** information to ensure the GNU General Public License requirements will
+** be met: https://www.gnu.org/licenses/gpl-3.0.html.
+**
+** $QT_END_LICENSE$
+**
+****************************************************************************/
+
+/*!
+    \page qtautomation-index.html
+    \title Qt for Automation
+    \nextpage {Qt for Automation Overview}{Overview}
+
+    \e {\QTA} is a collection of software components, tools, and services
+    targeted for the development of  automation systems: Connected
+    \e {'Internet of Things'} edge devices, backend services, and their
+    supporting applications.
+
+    \QTA builds on top of Qt for Application Development and
+    \l {Qt for Device Creation}, providing the same great integrated
+    development environment, libraries and tools for creating embedded devices
+    and applications on all platforms supported by Qt. Additional modules are
+    provided for machine-to-machine communication, building automation, and
+    remote access of desktop applications.
+
+    To help with potential issues faced during development, industry-specific
+    consultancy services are part of the \QTA offering.
+
+    \section1 Contents
+
+    \list
+        \li \l {Qt for Automation Overview}{Overview}
+        \li \l {Installing Qt for Automation}{Install Instructions}
+        \li \l {Related Information}
+    \endlist
+
+    \section1 Related Information
+
+    \list
+        \li \l {Qt MQTT}
+        \li \l {Qt KNX}
+        \li \l {Qt for Device Creation}
+    \endlist
+*/
+
+/*!
+    \page qtautomation-overview.html
+    \title Qt for Automation Overview
+    \previouspage {Qt for Automation}
+    \nextpage {Installing Qt for Automation}
+
+    \section1 Components
+
+    \QTA includes several components built on Qt and the \l {Qt Creator}
+    integrated development environment.
+
+    \section2 Qt
+
+    Cross-platform \l {http://www.qt.io/}{Qt} development libraries
+    and core tools are developed through an open-source collaboration model.
+    Qt is a full development framework designed to streamline the creation of
+    applications and user interfaces for desktop, embedded, and mobile
+    platforms.
+
+    The Qt libraries provide high-level APIs for a large variety of both
+    non-GUI and GUI related functionality. For UI creation, Qt provides a
+    number of approaches: traditional C++, declarative UI design with
+    \l {Qt Quick} or HTML5/hybrid user interfaces with the \l {Qt WebEngine}
+    module.
+
+    For overview about Qt libraries see the \l {Qt reference documentation}.
+
+    Qt modules that are especially useful for automation:
+
+    \list
+        \li \l {Qt Virtual Keyboard} - complete virtual keyboard solution with
+            word-prediction and multiple languages supported.
+        \li \l {Qt Quick Controls 2} - provides a set of controls for building
+            complete user interfaces in Qt Quick.
+        \li \l {Qt Quick Compiler} - enables compiling .qml source files into
+            application binaries, improving load times and security for code
+            assets.
+        \li \l {Qt WebEngine} - provides a web browser engine based on the
+            \l {https://www.chromium.org}{Chromium} project.
+        \li \l {Qt Serial Bus} - access various industrial serial buses and
+               protocols such as ModBus.
+        \li \l {Qt Quick WebGL Streaming} Plugin - allows running Qt Quick
+               applications remotely in a WebGL-enabled browser.
+    \endlist
+
+    \section2 Development Environment
+
+    The development environment in \QTA is built around \l {Qt Creator}.
+
+    \list
+      \li \l {Qt Creator: Developing Qt Quick Applications}
+      \li \l {Qt Creator: Analyzing Code}
+      \li \l {Qt Creator: Debugging}
+    \endlist
+
+    \section2 Qt Configuration Tool
+
+    The \l {Qt Configuration Tool} allows browsing and selecting features that
+    are included in the Qt build configuration, making it easy to optimize Qt
+    libraries for minimal footprint, performance and start-up time.
+
+    \section2 Automation APIs
+
+    \QTA comes with additional modules for machine-to-machine communication
+    and building automation:
+
+    \b {Qt MQTT}
+
+    \l {http://mqtt.org}{MQTT} (Message Queue Telemetry Transport) is an extremely
+    lightweight machine-to-machine (M2M) connectivity protocol utilizing the
+    publish-and-subscribe paradigm, and is suitable for carrying telemetry data
+    with minimal overhead.
+
+    \list
+      \li \l {Qt MQTT}
+    \endlist
+
+    \b {Qt KNX}
+
+    \l {http://www.knx.org}{KNX} is a stardard for controlling home and building
+    management equipment, such as lighting, blinds and shutters, security systems,
+    heating and energy management, and more.
+
+    \list
+      \li \l {Qt KNX}
+    \endlist
+
+    \section1 Deployment
+
+    Device deployment can be done directly from the Qt Creator IDE to a
+    device connected via USB or local area network, or to an emulator
+    running the same full software stack as the devices.
+
+    As with any Qt application, the same project can be deployed to
+    desktop or mobile targets as well.
+*/
+
+/*!
+    \page qtautomation-install.html
+    \title Installing Qt for Automation
+    \previouspage {Qt for Automation Overview}{Overview}
+
+    \QTA is available under a commercial license, or alternatively under the
+    \e {GNU General Public License version 3}. \l{Download Qt} page helps to
+    find the license that suits your need. The license is associated with a
+    Qt Account, which is required to install the product.
+
+    \section1 Prerequisites
+
+    \QTA is based on the \l {Qt for Device Creation} offering so the
+    prerequisites are the same for both. For more information about how to install and
+    configure these prerequisites on your development host, see
+    \l {Requirements for Linux/X11} and \l {Requirements for Windows}.
+
+    \section1 Installing
+
+    \list 1
+     \li Download the \l{Qt Online Installer Download}{Qt online installer}.
+
+     \note On Linux, the installer needs executable permissions before you
+           can run it.
+
+     \li Run the installer and select \uicontrol Next to get to the Qt account
+         section.
+
+     \li Enter your Qt account credentials and select \uicontrol Next to run
+         a license check against the Qt account.
+
+     \li Select \uicontrol Next again to choose an install path.
+
+     \li Select \uicontrol Next to see available packages to install from.
+
+     \li Select \b{Qt for Automation} and at least one \b Qt version
+     from the list, and follow the instructions to complete the installation.
+    \endlist
+*/
