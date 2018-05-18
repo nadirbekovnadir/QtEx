@@ -25,7 +25,7 @@ qhp.QtForAutomation.subprojects.manual.selectors  = manual
 tagfile                       = qtforautomation.tags
 
 # check dependencies, linking using external URLs for now
-depends += qtmqtt qtknx
+depends += qtmqtt qtknx qtopcua
 
 # dependencies to Qt docs
 depends += qtdoc qtquickcontrols2 qtwebengine qtvirtualkeyboard qtquick qtserialbus

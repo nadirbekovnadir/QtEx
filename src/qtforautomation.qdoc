@@ -33,8 +33,8 @@
     \nextpage {Qt for Automation Overview}{Overview}
 
     \e {\QTA} is a collection of software components, tools, and services
-    targeted for the development of  automation systems: Connected
-    \e {'Internet of Things'} edge devices, backend services, and their
+    targeted for the development of automation systems: connected
+    \e {Internet of Things} edge devices, backend services, and their
     supporting applications.
 
     \QTA builds on top of Qt for Application Development and
@@ -60,6 +60,7 @@
     \list
         \li \l {Qt MQTT}
         \li \l {Qt KNX}
+        \li \l {Qt OPC UA}
         \li \l {Qt for Device Creation}
     \endlist
 */
@@ -89,7 +90,7 @@
     \l {Qt Quick} or HTML5/hybrid user interfaces with the \l {Qt WebEngine}
     module.
 
-    For overview about Qt libraries see the \l {Qt reference documentation}.
+    For an overview of Qt libraries see the \l {Qt reference documentation}.
 
     Qt modules that are especially useful for automation:
 
@@ -137,9 +138,9 @@
     publish-and-subscribe paradigm, and is suitable for carrying telemetry data
     with minimal overhead.
 
-    \list
-      \li \l {Qt MQTT}
-    \endlist
+    \l {Qt MQTT} provides a standard-compliant implementation of the MQTT
+    protocol specification. It enables applications to act as telemetry displays
+    and devices to publish telemetry data.
 
     \b {Qt KNX}
 
@@ -147,9 +148,19 @@
     management equipment, such as lighting, blinds and shutters, security systems,
     heating and energy management, and more.
 
-    \list
-      \li \l {Qt KNX}
-    \endlist
+    \l {Qt KNX} implements the client side of a connection between a client and
+    a KNXnet/IP server. This connection enables sending messages to the KNX bus
+    and controlling the functionalities of the KNX devices. Only local device
+    management procedures and KNX application services working with group
+    addressing are fully supported.
+
+    \b {Qt OPC UA}
+
+    \l {https://opcfoundation.org/about/opc-technologies/opc-ua/}{OPC UA} is a
+    protocol for data modelling and exchange of data in industrial applications.
+
+    \l {Qt OPC UA} provides a means to interact with OPC UA servers on top of
+    third-party OPC UA stacks.
 
     \section1 Deployment
 
