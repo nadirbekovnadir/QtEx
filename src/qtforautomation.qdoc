@@ -177,10 +177,16 @@
     \title Installing Qt for Automation
     \previouspage {Qt for Automation Overview}{Overview}
 
-    \QTA is available under a commercial license, or alternatively under the
-    \e {GNU General Public License version 3}. \l{Download Qt} page helps to
-    find the license that suits your need. The license is associated with a
-    Qt Account, which is required to install the product.
+    Pre-built \QTA installation packages are available under a commercial
+    license. Open source developers can build their own binaries from the
+    sources that are available under the \e {GNU General Public License
+    version 3 (GPLv3)}. Further, Qt OPC UA can be built with the \e {GNU
+    Lesser General Public License (LGPLv3)} license, as long as the open62541
+    backend is used.
+
+    \l{Download Qt} page helps you to find the license that suits your needs.
+    The commercial license is associated with a Qt Account, which is required
+    to install the product.
 
     \section1 Prerequisites
 
