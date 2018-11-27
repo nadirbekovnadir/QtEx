@@ -121,3 +121,8 @@
     \externalpage https://doc.qt.io/QtKNX/index.html
     \title Qt KNX
 */
+
+/*!
+    \externalpage https://doc.qt.io/QtOPCUA/index.html
+    \title Qt OPC UA
+*/
