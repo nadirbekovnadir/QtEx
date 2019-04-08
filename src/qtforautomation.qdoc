@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2018 The Qt Company Ltd.
+** Copyright (C) 2019 The Qt Company Ltd.
 ** Contact: https://www.qt.io/licensing/
 **
 ** This file is part of the documentation of Qt for Automation.
@@ -30,7 +30,7 @@
 /*!
     \page qtautomation-index.html
     \title Qt for Automation
-    \nextpage {Qt for Automation Overview}{Overview}
+    \nextpage qtautomation-overview.html
 
     \e {\QTA} is a collection of software components, tools, and services
     targeted for the development of automation systems: connected
@@ -50,9 +50,9 @@
     \section1 Contents
 
     \list
-        \li \l {Qt for Automation Overview}{Overview}
-        \li \l {Installing Qt for Automation}{Install Instructions}
-        \li \l {Related Information}
+        \li \l {Qt for Automation Overview}
+        \li \l {Installing Qt for Automation}
+        \li \l {Deploying Qt for Automation Modules to Boot2Qt}
     \endlist
 
     \section1 Related Information
@@ -68,8 +68,8 @@
 /*!
     \page qtautomation-overview.html
     \title Qt for Automation Overview
-    \previouspage {Qt for Automation}
-    \nextpage {Installing Qt for Automation}
+    \previouspage qtautomation-index.html
+    \nextpage qtautomation-install.html
 
     \section1 Components
 
@@ -175,7 +175,8 @@
 /*!
     \page qtautomation-install.html
     \title Installing Qt for Automation
-    \previouspage {Qt for Automation Overview}{Overview}
+    \previouspage qtautomation-overview.html
+    \nextpage qtautomation-boot2qt.html
 
     Pre-built \QTA installation packages are available under a commercial
     license. Open source developers can build their own binaries from the
@@ -216,4 +217,40 @@
      \li Select \b{Qt for Automation} and at least one \b Qt version
      from the list, and follow the instructions to complete the installation.
     \endlist
+*/
+
+/*!
+    \page qtautomation-boot2qt.html
+    \title Deploying Qt for Automation Modules to Boot2Qt
+    \previouspage qtautomation-install.html
+
+    \QTA modules are created on top of Qt for Application development and
+    \l{Qt for Device Creation}. However, the modules are not part of the
+    Boot2Qt deployment images.
+
+    To add \QTA modules to an image using Qt Creator:
+
+    \list 1
+        \li Install \l {Qt for Device Creation} for your target, as instructed
+            in \l {Qt for Device Creation: Installation Guides}.
+        \li Install the sources of the module using the Qt online installer, as
+            instructed in \l {Installing Qt for Automation}.
+        \li Open the top-level project of the module (for example, qtmqtt.pro)
+            with Qt Creator and select the build and run kit, as instructed in
+            \l{Qt Creator: Opening Projects}.
+        \li Select \uicontrol Build > \uicontrol {Build Project}
+            to build the module, as instructed in
+            \l{Qt Creator: Building for Multiple Platforms}.
+        \li In the \uicontrol Projects mode, add \c install to the
+            \uicontrol {Make arguments} field in the build settings
+            to pass it to Make.
+            \image qtmqtt-build-settings.png
+        \li Build the project again to install the required files into the
+            \c sysroot directory of the target device.
+        \li Copy the generated .so files from the installation step to
+            \c /usr/lib on the target device to enable running applications
+            on it.
+    \endlist
+
+    You can now compile and link projects that use \QTA modules.
 */

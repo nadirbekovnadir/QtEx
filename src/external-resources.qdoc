@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2018 The Qt Company Ltd.
+** Copyright (C) 2019 The Qt Company Ltd.
 ** Contact: https://www.qt.io/licensing/
 **
 ** This file is part of the documentation of Qt for Automation.
@@ -55,6 +55,16 @@
 /*!
     \externalpage https://doc.qt.io/qtcreator/creator-debugging.html
     \title Qt Creator: Debugging
+*/
+
+/*!
+    \externalpage https://doc.qt.io/qtcreator/creator-project-opening.html
+    \title Qt Creator: Opening Projects
+*/
+
+/*!
+    \externalpage https://doc.qt.io/qtcreator/creator-building-targets.html
+    \title Qt Creator: Building for Multiple Platform
 */
 
 /*!

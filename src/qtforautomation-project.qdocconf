@@ -4,6 +4,7 @@ version                       = $QT_VERSION
 url                           = https://doc.qt.io/QtForAutomation
 
 sourcedirs                   += .
+imagedirs = ../images
 
 qhp.projects                  = QtForAutomation
 
@@ -28,7 +29,7 @@ tagfile                       = qtforautomation.tags
 depends += qtmqtt qtknx qtopcua
 
 # dependencies to Qt docs
-depends += qtdoc qtquickcontrols2 qtwebengine qtvirtualkeyboard qtquick qtserialbus
+depends += qtdoc qtquickcontrols qtwebengine qtvirtualkeyboard qtquick qtserialbus
 
 buildversion = "Qt for Automation $QT_VER"
 
