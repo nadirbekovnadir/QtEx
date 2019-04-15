@@ -126,3 +126,33 @@
     \externalpage https://doc.qt.io/QtOPCUA/index.html
     \title Qt OPC UA
 */
+
+/*!
+    \externalpage https://doc.qt.io/QtCoAP/index.html
+    \title Qt CoAP
+*/
+
+/*!
+    \externalpage http://coap.technology/
+    \title CoAP
+*/
+
+/*!
+    \externalpage https://tools.ietf.org/html/rfc7252
+    \title RFC 7252
+*/
+
+/*!
+    \externalpage http://mqtt.org
+    \title MQTT
+*/
+
+/*!
+    \externalpage http://www.knx.org
+    \title KNX
+*/
+
+/*!
+    \externalpage https://opcfoundation.org/about/opc-technologies/opc-ua/
+    \title OPC UA
+*/

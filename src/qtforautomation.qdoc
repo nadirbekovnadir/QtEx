@@ -58,8 +58,9 @@
     \section1 Related Information
 
     \list
-        \li \l {Qt MQTT}
+        \li \l {Qt CoAP}
         \li \l {Qt KNX}
+        \li \l {Qt MQTT}
         \li \l {Qt OPC UA}
         \li \l {Qt for Device Creation}
     \endlist
@@ -131,9 +132,24 @@
     \QTA comes with additional modules for machine-to-machine communication
     and building automation:
 
+    \b {Qt CoAP}
+
+    \l {CoAP}(Constrained Application Protocol) is a machine-to-machine (M2M)
+    web transfer protocol for use with constrained nodes and networks in the
+    Internet of Things (IoT). It is designed to easily interface with HTTP
+    for integration with the Web, while meeting specialized requirements such
+    as multicast support, very low overhead, and simplicity for constrained
+    environments.
+
+    \l {Qt CoAP} implements the client side of CoAP defined by \l{RFC 7252}.
+    Generally, CoAP is designed to use datagram-oriented transport such as UDP,
+    and therefore the current implementation of the transport is based on UDP.
+    However, it is also possible to implement custom transports based on TCP,
+    WebSocket, and so on.
+
     \b {Qt MQTT}
 
-    \l {http://mqtt.org}{MQTT} (Message Queue Telemetry Transport) is an extremely
+    \l {MQTT} (Message Queue Telemetry Transport) is an extremely
     lightweight machine-to-machine (M2M) connectivity protocol utilizing the
     publish-and-subscribe paradigm, and is suitable for carrying telemetry data
     with minimal overhead.
@@ -144,8 +160,8 @@
 
     \b {Qt KNX}
 
-    \l {http://www.knx.org}{KNX} is a standard for controlling home and building
-    management equipment, such as lighting, blinds and shutters, security systems,
+    \l {KNX} is a standard for controlling home and building management
+    equipment, such as lighting, blinds and shutters, security systems,
     heating and energy management, and more.
 
     \l {Qt KNX} implements the client side of a connection between a client and
@@ -156,8 +172,8 @@
 
     \b {Qt OPC UA}
 
-    \l {https://opcfoundation.org/about/opc-technologies/opc-ua/}{OPC UA} is a
-    protocol for data modelling and exchange of data in industrial applications.
+    \l {OPC UA} is a protocol for data modelling and exchange of data in
+    industrial applications.
 
     \l {Qt OPC UA} provides a means to interact with OPC UA servers on top of
     third-party OPC UA stacks.
