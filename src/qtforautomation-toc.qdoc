@@ -38,8 +38,9 @@
     \endomit
 
     \list
-        \li \l {Qt for Automation Overview}{Overview}
-        \li \l {Installing Qt for Automation}{Install Instructions}
+        \li \l {Qt for Automation Overview}
+        \li \l {Installing Qt for Automation}
+        \li \l {Deploying Qt for Automation Modules to Boot2Qt}
         \li \l {Related Information}
     \endlist
 */

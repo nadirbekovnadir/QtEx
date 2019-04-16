@@ -4,6 +4,7 @@ version                       = $QT_VERSION
 url                           = https://doc.qt.io/QtForAutomation
 
 sourcedirs                   += .
+imagedirs = ../images
 
 qhp.projects                  = QtForAutomation
 
